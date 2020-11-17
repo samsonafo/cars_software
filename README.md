@@ -23,3 +23,7 @@ Keep copying the link and run only cell 3 and 4. Be careful not to run cell 2, t
 This file scraps data from the cheki website. copy the webpage of the car, you want to scrap into cell 3.
 Keep copying the link and run only cell 3 and 4. Be careful not to run cell 2, this will re-initialize the dataframe.
 Happy Scraping. 
+
+##### data_cars45.ipynb
+This file scraps data from car from autochek which is also redirecting the datas from Cheki.com.ng. 
+In this file We scraped 14,195 rows of cars and saved into a CSV file afterwards. 
