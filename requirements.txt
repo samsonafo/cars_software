@@ -4,3 +4,4 @@ DateTime==4.3
 plotly==4.1.1
 category-encoders==2.2.2
 seaborn==0.9.0
+matplotlib==3.2.1
