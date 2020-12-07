@@ -18,7 +18,7 @@ def date_now():
     return mydate
 
 # app
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='UI')
 
 # routes
 @app.route('/',  methods=['GET'])
