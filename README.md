@@ -29,9 +29,12 @@ This file scraps data from car from autochek which is also redirecting the datas
 In this file We scraped 14,195 rows of cars and saved into a CSV file afterwards. 
 
 ##### model_2.ipynb
-For model development - Here I compared the performance of different models. (Linear Regression, k-Nearest Neigbours, Random Forest and Gradient Boosted Trees)
+For model development - Here I compared the performance of different models. (Linear Regression, k-Nearest Neigbours, Random Forest and Gradient Boosted Trees) with missing rating set to 2.0
 
 
 ##### model_2.ipynb-gridsearchcv
 For model development - Here I used GridSearchCV to find the best parameters for the Gradient Boosted Trees and K-Nearest Neigbhours.
 (The 2 best performing models from model_2.ipynb)
+
+##### model_3.ipynb
+For model development - Here I compared the performance of different models. (Linear Regression, k-Nearest Neigbours, Random Forest and Gradient Boosted Trees) with missing rating set to 3.0
