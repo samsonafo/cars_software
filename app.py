@@ -6,6 +6,7 @@ import gspread
 import pandas as pd
 import pickle
 import numpy as np
+import xgboost as xgb
 
 
 # load model
