@@ -19,12 +19,12 @@ def date_now():
     return mydate
 
 # app
-app = Flask(__name__, template_folder='UI')
+app = Flask(__name__, template_folder='templates')
 
 # routes
 @app.route('/',  methods=['GET'])
 def home():
-    return render_template("index.html")
+    return render_template("home1.html")
 
 if __name__ == '__home__':
     app.run(port = 5000, debug=True)
