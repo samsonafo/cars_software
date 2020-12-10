@@ -24,7 +24,8 @@ app = Flask(__name__, template_folder='templates')
 # routes
 @app.route('/',  methods=['GET'])
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
+
 
 if __name__ == '__home__':
     app.run(port = 5000, debug=True)
