@@ -65,7 +65,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Welcome to Tokunbo</h1>
-      <h2>We help you predict the selling price of your foreign and nigerian used car </h2>
+      <h2>I can provide an estimate for the selling price of your foreign and nigerian used car </h2>
       <a href="#about" class="btn-get-started scrollto">Input your car Details</a>
     </div>
   </section><!-- End Hero -->
@@ -81,27 +81,107 @@
             <img src="static/img/about-cars2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Voluptatem dignissimos provident</h3>
+            <h3 data-aos="fade-up">Love Cars? Me too</h3>
             <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Please provide your car details below and I will return with cost Estimate.
             </p>
-            <div class="icon-box" data-aos="fade-up">
-              <i class="bx bx-receipt"></i>
-              <h4>Corporis voluptates sit</h4>
-              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-            </div>
+            <form action="/result" style="border:7px solid #ccc ; width:95%" method='post'>
+    <hr>
+    <div class = "labelContainer">
+    <label for="email"><b>Millage </b></label>
+    
+    <input type="number" placeholder="Millage" name="Millage" id="Millage" required="required">
+    
+        <label for="History"><b>History</b></label>
+    
+    
+       <select id="History" name="History" required="required">
+      <option value="foreign">foreign</option>
+      <option value="local">local</option>
+    </select>
+        
+        </div>
+                
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Ullamco laboris nisi</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
+        <div class = "labelContainer">
+    <label for="Age"><b>Age</b></label>
+    
+    <input type="number" placeholder="Age" name="Age" id="Age" required="required">
+    
+        <label for="Transmission"><b>Transmission</b></label>
+    
+    
+       <select id="Transmission" name="Transmission" required="required">
+      <option value="automatic">automatic</option>
+      <option value="manual">manual</option>
+    </select>
+        
+        </div>
+                
+                
+    <div class = "labelContainer">
+    <label for="Make"><b>Make</b></label>
+    
+       <select id="Make" name="Make" required="required">
+      <option value="Toyota">Toyota</option>
+      <option value="Mazda">Mazda</option>
+    </select>
+    
+        <label for="Model"><b>Model</b></label>
+    
+    
+       <select id="Model" name="Model" required="required">
+      <option value="automatic">automatic</option>
+      <option value="manual">manual</option>
+    </select>
+        
+        </div>
+                
+                
+    <div class = "labelContainer">
+    <label for="Ratings"><b>Ratings</b></label>
+    
+    <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required">
+    
+        <label for="City"><b>City</b></label>
+    
+    
+       <select id="City" name="City" required="required">
+      <option value="Abia">Abia</option>
+      <option value="Accra">Accra</option>
+      <option value="Lagos">Lagos</option>
+      <option value="Ogun">Ogun</option>
+      <option value="Abuja">Abuja</option>
+      <option value="Rivers">Rivers</option>
+      <option value="Ibadan">Ibadan</option>
+      <option value="Osun">Osun</option>
+      <option value="Kaduna">Kaduna</option>
+      <option value="Kwara">Kwara</option>
+      <option value="Enugu">Enugu</option>
+      <option value="Imo">Imo</option>
+      <option value="Cross-river">Cross-river</option>
+      <option value="Anambra">Anambra</option>
+      <option value="Delta">Delta</option>
+      <option value="Edo">Edo</option>
+      <option value="Oyo">Oyo</option>
+      <option value="Port Harcourt">Port Harcourt</option>
+      <option value="Owerri">Owerri</option>
+      <option value="Ilorin">Ilorin</option>
+      <option value="Benin">Benin</option>
+      <option value="Asaba">Asaba</option>
+      <option value="Onitsha">Onitsha</option>
+      <option value="Kano">Kano</option>
+    </select>
+        
+        </div>
+            
+    
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Ullamco laboris nisi</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-            </div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" id="btn">Submit</button>
+    </div>
+</form>
 
           </div>
         </div>
@@ -533,67 +613,9 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Maxim</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Maxim</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Tokunbo</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
