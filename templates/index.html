@@ -53,7 +53,7 @@
           <li><a href="#predict">Predict</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Feed Back</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -72,7 +72,7 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- ======= Predict Section ======= -->
     <section id="predict" class="about">
       <div class="container">
 
@@ -88,9 +88,11 @@
             <form action="/result" style="border:7px solid #ccc ; width:95%" method='post'>
     <hr>
     <div class = "labelContainer">
-    <label for="email"><b>Millage </b></label>
+    <label for="Millage"><b>Millage </b></label>
     
     <input type="number" placeholder="Millage" name="Millage" id="Millage" required="required">
+        
+        &nbsp;&nbsp;
     
         <label for="History"><b>History</b></label>
     
@@ -100,13 +102,15 @@
       <option value="local">local</option>
     </select>
         
-        </div>
+        </div><br>
                 
 
         <div class = "labelContainer">
-    <label for="Age"><b>Age</b></label>
+    <label for="Model-Year"><b>Model-Year</b></label>
     
-    <input type="number" placeholder="Age" name="Age" id="Age" required="required">
+    <input type="year" placeholder="Model-Year" name="Model-Year" id="Model-Year" required="required">
+            
+            &nbsp;&nbsp;
     
         <label for="Transmission"><b>Transmission</b></label>
     
@@ -116,7 +120,7 @@
       <option value="manual">manual</option>
     </select>
         
-        </div>
+        </div><br>
                 
                 
     <div class = "labelContainer">
@@ -124,24 +128,77 @@
     
        <select id="Make" name="Make" required="required">
       <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <option value="Hyundai">Hyundai</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Lexus">Lexus</option>
+      <option value="Kia">Kia</option>
+      <option value="Ford">Ford</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="GMC">GMC</option>
+      <option value="Acura">Acura</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Chrysler">Chrysler</option>
+      <option value="GAC">GAC</option>
+      <option value="Mitsubishi">Mitsubishi</option>
+      <option value="Volvo">Volvo</option>
+      <option value="Infiniti">Infiniti</option>
+      <option value="Audi">Audi</option>
+      <option value="Chevrolet">Chevrolet</option>
       <option value="Mazda">Mazda</option>
+      <option value="Pontiac">Pontiac</option>
+      <option value="Peugeot">Peugeot</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Jaguar">Jaguar</option>
+      <option value="Subaru">Subaru</option>
+      <option value="Cadillac">Cadillac</option>
+      <option value="Porsche">Porsche</option>
+      <option value="Renault">Renault</option>
+      <option value="Suzuki">Suzuki</option>
+      <option value="Isuzu">Isuzu</option>
+      <option value="Rio">Rio</option>
+      <option value="Skoda">Skoda</option>
+      <option value="Innoson">Innoson</option>
+      <option value="Landrover">Landrover</option>
+      <option value="Citroen">Citroen</option>
     </select>
+        
+        &nbsp;&nbsp;
     
         <label for="Model"><b>Model</b></label>
     
     
        <select id="Model" name="Model" required="required">
-      <option value="automatic">automatic</option>
-      <option value="manual">manual</option>
+      <option value="Accord">Accord</option>
+      <option value="Corolla">Corolla</option>
+      <option value="Azera">Azera</option>
+      <option value="Venza">Venza</option>
+      <option value="Avensis">Avensis</option>
+      <option value="Camry">Camry</option>
+      <option value="Pilot">Pilot</option>
+      <option value="Highlander">Highlander</option>
+      <option value="Sonata">Sonata</option>
+      <option value="Altima">Altima</option>
+      <option value="4-Runner">4-Runner</option>
+      <option value="Murano">Murano</option>
+      <option value="Maxima">Maxima</option>
+      <option value="Sienna">Sienna</option>
+      <option value="Edge">Edge</option>
+      <option value="Avalon">Avalon</option>
+      <option value="RX 350">RX 350</option>
+      <option value="Picanto">Picanto</option>
     </select>
         
-        </div>
+        </div><br>
                 
                 
     <div class = "labelContainer">
     <label for="Ratings"><b>Ratings</b></label>
     
-    <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required">
+    <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required" min="0" max="5">
+        
+        &nbsp;&nbsp;
     
         <label for="City"><b>City</b></label>
     
@@ -173,7 +230,7 @@
       <option value="Kano">Kano</option>
     </select>
         
-        </div>
+        </div><br>
             
     
 
@@ -187,10 +244,10 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Predict Section -->
 
-    <!-- ======= Steps Section ======= -->
-    <section id="steps" class="steps section-bg">
+    <!-- ======= Results Section ======= -->
+    <section id="results" class="steps section-bg">
       <div class="container">
 
         <div class="row no-gutters">
@@ -236,68 +293,6 @@
       </div>
     </section><!-- End Steps Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Modi sit est</h4>
-                  <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Unde praesentium sed</h4>
-                  <p>Voluptas vel esse repudiandae quo excepturi.</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">
-                  <h4>Pariatur explicabo vel</h4>
-                  <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">
-                  <h4>Nostrum qui quasi</h4>
-                  <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-7 ml-auto" data-aos="fade-left">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <figure>
-                  <img src="static/img/features-1.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <figure>
-                  <img src="static/img/features-2.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <figure>
-                  <img src="static/img/features-3.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <figure>
-                  <img src="static/img/features-4.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -322,12 +317,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="static/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="static/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -336,12 +331,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="static/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="static/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -350,12 +345,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="static/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="static/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -364,12 +359,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="static/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="static/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -378,12 +373,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="static/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web 2</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="static/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -538,39 +533,11 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Feed Back</h2>
+          <p>Hope you enjoyed your time with Tokunbo. Please drop your Feedback below or Contact any of Member of our Team.</p>
         </div>
 
         <div class="row no-gutters justify-content-center" data-aos="fade-up">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email mt-4">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-          </div>
 
         </div>
 
@@ -615,14 +582,10 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Tokunbo</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Tokunbo</span></strong> 2021. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
