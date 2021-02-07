@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import xgboost as xgb
 import time
-from encodings import norm,one_hot_encoder,base_encoder
+from encoder import nm,ohe,be
 
 
 # load model
@@ -37,35 +37,36 @@ def predict():
         Make = request.form['Make']
         Model = request.form['Model']
         Ratings = request.form['Ratings']
-        City = request.form['City']
+        city = request.form['City']
          
         year = time.strftime("%Y")
         Age = int(year) - int(Model_Year)
         
         
         
-        data_df = pd.DataFrame([[Millage,History,Age,Transmission,Make,Model,Ratings,City]],
-                               columns=['Millage','History','Age','Transmission','Make','Model','Ratings','City'])
+        data_df = pd.DataFrame([[city,History,Millage,Ratings,Make,Model,Transmission,Age]],
+                               columns=['city','History','Millage','Ratings','Make','Model','Transmission','Age'])
+        
         
         #encodings
         
         norm_cols = ['Millage','Ratings','Age']
         
         # normalize cols
-        data_df.loc[:,norm_cols] = norm.transform(data_df[norm_cols])
+        data_df.loc[:,norm_cols] = nm.transform(data_df[norm_cols])
         
         #one hot encoding
-        data_df = one_hot_encoder.transform(data_df)
+        data_df = ohe.transform(data_df)
         
         #base encoder
-        data_df = base_encoder.transform(data_df)
+        data_df = be.transform(data_df)
         
         # predictions
         output = model.predict(data_df)
         #result = np.int(np.round(output))
         
     # return data
-    return render_template("index.html#result",prediction=output)
+    return render_template("index.html",prediction=output) #output sent here
 
 
 if __name__ == '__home__':
