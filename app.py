@@ -1,12 +1,11 @@
 from flask import Flask, render_template, request
 from oauth2client.service_account import ServiceAccountCredentials
-from pprint import pprint
-from datetime import datetime
-import gspread
 import pandas as pd
 import pickle
 import numpy as np
 import xgboost as xgb
+import time
+from encodings import norm,one_hot_encoder,base_encoder
 
 
 # load model
@@ -41,12 +40,26 @@ def predict():
         City = request.form['City']
          
         year = time.strftime("%Y")
-        Age = year - Model_Year
+        Age = int(year) - int(Model_Year)
         
         
         
         data_df = pd.DataFrame([[Millage,History,Age,Transmission,Make,Model,Ratings,City]],
                                columns=['Millage','History','Age','Transmission','Make','Model','Ratings','City'])
+        
+        #encodings
+        
+        norm_cols = ['Millage','Ratings','Age']
+        
+        # normalize cols
+        data_df.loc[:,norm_cols] = norm.transform(data_df[norm_cols])
+        
+        #one hot encoding
+        data_df = one_hot_encoder.transform(data_df)
+        
+        #base encoder
+        data_df = base_encoder.transform(data_df)
+        
         # predictions
         output = model.predict(data_df)
         #result = np.int(np.round(output))
