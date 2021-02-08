@@ -63,7 +63,8 @@ def predict():
         
         # predictions
         output = model.predict(data_df)
-        #result = np.int(np.round(output))
+        output = np.int(np.round(output,decimals=2)*1000000) #price was divided by a million to build the model
+        output = "{:,}".format(output) 
         
     # return data
     return render_template("index.html",prediction=output) #output sent here
