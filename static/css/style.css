@@ -445,9 +445,12 @@ section {
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+
 .breadcrumbs {
   padding: 20px 0;
   background-color: #f7f7f7;
@@ -508,6 +511,105 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+
+/*------
+little edits to the first section
+--------*/
+
+.img:hover{
+  animation: spin 2s 1s infinite;
+  justify-content: center;
+
+}
+@keyframes spin{
+  0% {
+    transform: rotate3d(0)
+
+  }
+  30%{
+    transform: rotate3d(1,0,0 180deg);
+  }
+  50%{
+    transform: rotate3d(0, 1,0, 180deg);
+  }
+  70%{
+    transform: rotate3d(1,0,0 180deg);
+  }
+  100%{
+    transform: rotate3d(0);
+  }
+}
+#predict form{
+  text-align: center;
+  border:none; 
+  width:95%;
+  margin: auto;
+  box-shadow: 0px 5px 5px 5px rgb(202, 202, 202);
+  padding: 20px 0;
+}
+
+#predict form:hover{
+  box-shadow: 0px 2px 2px 2px rgb(202, 202, 202);
+}
+
+.labelContainer select{
+  width: 110px;
+  border: none;
+  padding-left: 10px;
+  background-color: #18d26e;
+  height: 30px;
+  font-weight: lighter;
+  outline: #1bac91;
+  border-radius: 2px;
+  text-align: center;
+}
+.labelContainer select:hover{
+  background-color: #1bac91;
+}
+.labelContainer input{
+  width: 120px;
+  border: none;
+  box-shadow: 2px 2px 2px #18d26e;
+  outline: none;
+  text-align: center;
+}
+.labelContainer input:hover{
+  width: 120px;
+  border: none;
+  box-shadow: 2px 2px #22d8b6;
+}
+
+.labelContainer input::placeholder{
+  text-align: center;
+  font-weight: lighter;
+}
+#predict form button{
+  border: none;
+  background-color: #18d26e;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bolder;
+  border-radius: 2px;
+  margin-right: 8px;
+  outline: none;
+  width: 120px;
+
+}
+#predict form button:hover{
+  background-color: #1bac91;
+  box-shadow: 2px 0 2px 0 rgb(202, 202, 202);
+}
+
+
+/*-------
+end of my edits
+--------*/
+
+
+
+
+
 .about h3 {
   font-weight: 400;
   font-size: 34px;
