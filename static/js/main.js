@@ -188,11 +188,18 @@
         emailjs.sendForm('contact_service', 'contact_id', this)
             .then(function() {
                 console.log('SUCCESS!');
+                document.getElementsByClassName('contact-success')[0].style.display = 'block';
             }, function(error) {
                 console.log('FAILED...', error);
+                document.getElementsByClassName('contact-fail')[0].style.display = 'block'
             });
     });
 }
+
+document.getElementById('predict-form').addEventListener('submit', function(event){
+  event.preventDefault();
+})
+
 
   // Init AOS
   function aos_init() {
