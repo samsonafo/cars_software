@@ -557,12 +557,12 @@ little edits to the first section
   border:none; 
   width:95%;
   margin: auto;
-  box-shadow: 0px 5px 5px 5px rgb(202, 202, 202);
+  box-shadow: 0px 5px 24px 5px rgb(0 0 0 / 12%);
   padding: 20px 0;
 }
 
 #predict form:hover{
-  box-shadow: 0px 2px 2px 2px rgb(202, 202, 202);
+  box-shadow: 0px 2px 10px 2px rgb(0 0 0 / 12%);
 }
 
 .labelContainer select{
@@ -613,6 +613,12 @@ little edits to the first section
   box-shadow: 2px 0 2px 0 rgb(202, 202, 202);
 }
 
+.contact-success{
+  display: none;
+}
+.contact-fail{
+  display: none;
+}
 
 /*-------
 end of my edits
