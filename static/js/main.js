@@ -194,6 +194,11 @@
     });
 }
 
+document.getElementById('predict-form').addEventListener('submit', function(event){
+  event.preventDefault();
+})
+
+
   // Init AOS
   function aos_init() {
     AOS.init({

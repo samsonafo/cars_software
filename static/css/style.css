@@ -516,7 +516,19 @@ section {
 /*------
 little edits to the first section
 --------*/
-
+.img img{
+  height: 100%;
+  width: 100%;
+  
+}
+.imgs:hover{
+  animation: spin 2s 1s infinite;
+  
+}
+.imgs{
+  height: 100%;
+  width: 100%;
+}
 .img:hover{
   animation: spin 2s 1s infinite;
   justify-content: center;
