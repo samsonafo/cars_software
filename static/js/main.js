@@ -214,3 +214,14 @@ document.getElementById('predict-form').addEventListener('submit', function(even
   });
 
 })(jQuery);
+
+//<label for="Ratings" ><b class="eval">
+//<p class="rating-note">
+//<b> Note: </b><br>
+//Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+//Molestias quae odio voluptas totam, repellendus consequatur 
+//autem deleniti 
+
+//</p>
+
+//Ratings:</b></label>
