@@ -519,6 +519,7 @@ little edits to the first section
 .img img{
   height: 100%;
   width: 100%;
+  padding-top: 15%;
   
 }
 .imgs:hover{
@@ -528,6 +529,7 @@ little edits to the first section
 .imgs{
   height: 100%;
   width: 100%;
+  
 }
 .img:hover{
   animation: spin 2s 1s infinite;
@@ -582,16 +584,39 @@ little edits to the first section
 .labelContainer input{
   width: 120px;
   border: none;
-  box-shadow: 2px 2px 2px #18d26e;
+  box-shadow: 0px 0px 5px 0px #18d26e;
   outline: none;
   text-align: center;
 }
 .labelContainer input:hover{
   width: 120px;
   border: none;
-  box-shadow: 2px 2px #22d8b6;
+  box-shadow: 0 0 3px 0 #22d8b6;
 }
+.labelContainer :nth-child(4){
+  position: relative;
+  
+}
+.rating-note{
+  display: none;
+  
+  background-color: white;
+  border: 2px solid #18d26e;
+  width:250px;
+  height:200px;
+  position:absolute;
+  bottom: 5%;
+  left: 7%;
+  text-align: center;
+  color: #1c3733;
+  padding-top: 4%;
+  
 
+
+}
+.eval:hover  .rating-note{
+  display: block;
+}
 .labelContainer input::placeholder{
   text-align: center;
   font-weight: lighter;
@@ -900,6 +925,9 @@ end of my edits
 @media (max-width: 767px) {
   .testimonials {
     margin: 30px 10px;
+  }
+  .imgs img{
+    padding: none;
   }
 }
 
