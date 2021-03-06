@@ -214,3 +214,4 @@ document.getElementById('predict-form').addEventListener('submit', function(even
   });
 
 })(jQuery);
+

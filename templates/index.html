@@ -10,22 +10,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/img/favicon.png" rel="icon">
-  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="static/css/style.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Maxim - v2.2.0
@@ -33,6 +33,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_9HKXOW4r35QUZMoQRaWI8');
+        })();
+    </script>
 </head>
 
 <body>
@@ -42,7 +49,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <a href="#hero"><img src="static/img/tokunbo2.jpeg" alt="" class="img-fluid"></a>
+        <a href="#hero"><img src="../static/img/tokunbo2.jpeg" alt="" class="img-fluid"></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -76,16 +83,18 @@
     <section id="predict" class="about">
       <div class="container">
 
+
         <div class="row">
           <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="static/img/about-cars2.jpg" class="img-fluid" alt="">
+            <img src="../static/img/3-2-car-free-download-png.png" class="img-fluid imgs" alt="">
+
           </div>
           <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
             <h3 data-aos="fade-up">Love Cars? Me too</h3>
             <p data-aos="fade-up">
               Please provide your car details below and I will return with cost Estimate.
             </p>
-            <form action="/result" style="border:7px solid #ccc ; width:95%" method='post'>
+            <form action="/result" method='post' id="predict-form">
     <hr>
     <div class = "labelContainer">
     <label for="Millage"><b>Millage </b></label>
@@ -194,7 +203,19 @@
                 
                 
     <div class = "labelContainer">
-    <label for="Ratings"><b>Ratings</b></label>
+
+
+      <label for="Ratings" ><b class="eval">
+        <p class="rating-note">
+        <b> Note: </b><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Molestias quae odio voluptas totam, repellendus consequatur 
+        autem deleniti 
+        
+        </p>
+        
+        Ratings:</b></label>
+
     
     <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required" min="0" max="5">
         
@@ -253,19 +274,24 @@
         <div class="row">
 
           <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Here is my prediction</h3>
-            <p data-aos="fade-up">
-              We predict the cost of the car to be ₦ {{prediction}}
-            </p>
+            <h3 data-aos="fade-up" style="text-align: center;">Here is my prediction</h3>
+            <p data-aos="fade-up" style="text-align: center;">
+              We predict the cost of the car to be </p>
               
-        <img src="https://media.giphy.com/media/l0MYJnJQ4EiYLxvQ4/giphy.gif" width="350">
+              <h4 style="color: #1bac91; text-align: center;">₦ {{prediction}}</h4>
+            
+              
+        <!---<img src="https://media.giphy.com/media/l0MYJnJQ4EiYLxvQ4/giphy.gif" width="350">-->
               
 
 
           </div>
             
         <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="static/img/ford-mustang.png" class="img-fluid" alt="">
+
+
+            <img src="../static/img/ford-mustang.png" class="img-fluid" alt="">
+
           </div>
         </div>
           
@@ -292,12 +318,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/innoson-1.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/innoson-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2020 Innoson IVM G20</h4>
                 <p>₦ 6,770,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/innoson-1.jpg" data-gall="portfolioGallery" class="venobox" title="Innoson-1"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/innoson-1.jpg" data-gall="portfolioGallery" class="venobox" title="Innoson-1"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/innoson-ivm-g20-smart-2020-manual-ng-615531" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -306,12 +332,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/camry-1.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/camry-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2014 Toyota Corolla</h4>
                 <p>₦ 5,565,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/camry-1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/camry-1.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/cars/toyota-corolla-2014-ng-716527?filter=73%2C770" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -320,12 +346,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/GAC-1.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/GAC-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2016 GAC GA3-S</h4>
                 <p>₦ 2,270,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/GAC-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/GAC-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/gac-ga3-s-2016-automatic-ng-618991" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -334,12 +360,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/lexus-2.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/lexus-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2010 Lexus Es</h4>
                 <p>₦ 4,490,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/lexus-2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/lexus-2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/cars/lexus-es-2010-automatic-ng-716609?filter=1872" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -348,26 +374,26 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/kia-cars45.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/kia-cars45.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2017 Kia Rio</h4>
                 <p>₦ 3,395,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/kia-cars45.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/kia-cars45.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/kia-rio-2017-automatic-ng-628938" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+../
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/Nissan-versa cars45.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/Nissan-versa cars45.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2007 Nissan Versa</h4>
                 <p>₦ 1,275,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/Nissan-versa cars45.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/Nissan-versa cars45.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/nissan-versa-2007-automatic-ng-557756" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -376,12 +402,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/jeep-1.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/jeep-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Jeep Grand Cherokee Premium Brand</h4>
                 <p>₦ 31,500,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/jeep-1.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/jeep-1.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/jeep-grand-cherokee-premium-brand-2019-automatic-ng-527619l" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -390,12 +416,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/jiji-2.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/jiji-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Toyota Camry 2005 Gray</h4>
                 <p>₦ 1,200,000</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/jiji-2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/jiji-2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
                   <a href="https://jiji.ng/surulere/cars/toyota-camry-2005-gray-pfI95edLaEx56KB7yANFCM0h.html?lid=sHe3yMh4JL3TJaXS&cur_pos=2&pos=2&ads_count=119549&ads_per_page=20&page=1" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -404,12 +430,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="static/img/marketplace/toyota-2.jpg" class="img-fluid" alt="">
+              <img src="../static/img/marketplace/toyota-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>2017 Toyota Corolla</h4>
                 <p>₦ 6,207,500</p>
                 <div class="portfolio-links">
-                  <a href="static/img/marketplace/toyota-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="../static/img/marketplace/toyota-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
                   <a href="https://buy.cars45.com/toyota-corolla-2017-automatic-ng-639141" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -434,7 +460,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
             <div class="member">
-              <img src="static/img/team/samson.jpg" class="img-fluid" alt="">
+              <img src="../static/img/team/samson.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Samson Afolabi</h4>
@@ -450,7 +476,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="static/img/team/temitope.jpeg" class="img-fluid" alt="">
+              <img src="../static/img/team/temitope.jpeg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Temitope Ajisegiri</h4>
@@ -466,7 +492,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="static/img/team/Anita.jpeg" class="img-fluid" alt="">
+              <img src="../static/img/team/Anita.jpeg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Anita Okoh</h4>
@@ -482,7 +508,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="static/img/team/samuel.jpeg" class="img-fluid" alt="">
+              <img src="../static/img/team/samuel.jpeg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Oluwaseun Samuel Akangbe</h4>
@@ -518,7 +544,7 @@
 
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
           <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" role="form" class="php-email-form " id="contact-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -537,11 +563,11 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"> There's been a problem sending your message. Please try again.</div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              
+                
+                <div class=" contact-fail"> There's been a problem sending your message. Please try again.</div>
+                <div class="contact-success">Your message has been sent. Thank you!</div>
+             
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -568,17 +594,17 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="static/vendor/php-email-form/validate.js"></script>
-  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/venobox/venobox.min.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/venobox/venobox.min.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="static/js/main.js"></script>
+  <script src="../static/js/main.js"></script>
 
 </body>
 
