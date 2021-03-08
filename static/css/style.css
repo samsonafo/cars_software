@@ -603,14 +603,16 @@ little edits to the first section
   
   background-color: white;
   border: 2px solid #18d26e;
-  width:250px;
-  height:200px;
+  width: 400px;
+  height:300px;
   position:absolute;
-  bottom: 5%;
-  left: 7%;
+  bottom: 10%;
+  left: 3%;
   text-align: center;
   color: #1c3733;
   padding-top: 4%;
+  z-index: 1;
+  
   
 
 
