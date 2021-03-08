@@ -73,7 +73,7 @@
     <div class="container text-center text-md-left" data-aos="fade-up">
       <h1>Welcome to Tokunbo</h1>
       <h2>I can provide an estimate for the selling price of your foreign and nigerian used car </h2>
-      <a href="#about" class="btn-get-started scrollto">Input your car Details</a>
+      <a href="#predict" class="btn-get-started scrollto">Input your car Details</a>
     </div>
   </section><!-- End Hero -->
 
@@ -86,7 +86,7 @@
 
         <div class="row">
           <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="../static/img/3-2-car-free-download-png.png" class="img-fluid imgs" alt="">
+            <img src="../static/img/cars-4-2.jpg" class="img-fluid imgs" alt="">
 
           </div>
           <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
@@ -94,7 +94,8 @@
             <p data-aos="fade-up">
               Please provide your car details below and I will return with cost Estimate.
             </p>
-            <form action="/result" method='post' id="predict-form">
+              
+<form action="/result " method='post' id="predict-form">
     <hr>
     <div class = "labelContainer">
     <label for="Millage"><b>Millage </b></label>
@@ -197,6 +198,24 @@
       <option value="Avalon">Avalon</option>
       <option value="RX 350">RX 350</option>
       <option value="Picanto">Picanto</option>
+      <option value="G class">G class</option>
+      <option value="Prius">Prius</option>
+      <option value="Pathfinder">Pathfinder</option>
+      <option value="Coaster">Coaster</option>
+      <option value="Avensis">Avensis</option>
+      <option value="Lancer">Lancer</option>
+      <option value="E350">E350</option>
+      <option value="Fusion">Fusion</option>
+      <option value="T5 Transporter">T5 Transporter</option>
+      <option value="Cabstar">Cabstar</option>
+      <option value="Navigator">Navigator</option>
+      <option value="Spectra">Spectra</option>
+      <option value="Grand Cherokee">Grand Cherokee</option>
+      <option value="Tundra">Tundra</option>
+      <option value="Tucson">Tucson</option> 
+      <option value="Civic">Civic</option>
+      <option value="Sentra">Sentra</option>
+      <option value="Elantra">Elantra</option>
     </select>
         
         </div><br>
@@ -208,16 +227,18 @@
       <label for="Ratings" ><b class="eval">
         <p class="rating-note">
         <b> Note: </b><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Molestias quae odio voluptas totam, repellendus consequatur 
-        autem deleniti 
+        1 -- car in excellent condition
+        2 -- car in very good condition with minor wear and tear
+        3 -- car in good condition with slight wear and tear, may need repairs and refurbishment
+        4 -- car in average condition with wear and tear, DEFINITELY needs repair and refurbishment
+        5 -- car with major wear and tear, needs repair and refurbishment.
         
         </p>
         
         Ratings:</b></label>
 
     
-    <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required" min="0" max="5">
+    <input type="number" placeholder="Ratings" name="Ratings" id="Ratings" required="required" min="1" max="5">
         
         &nbsp;&nbsp;
     
