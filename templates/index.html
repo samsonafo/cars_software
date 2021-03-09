@@ -221,19 +221,11 @@
         </div><br>
                 
                 
-    <div class = "labelContainer">
+    <div class = "labelContainer" >
 
 
-      <label for="Ratings" ><b class="eval">
-        <p class="rating-note">
-        <b> Note: </b><br>
-        1 -- Car in excellent condition. <br>
-        2 -- Car in very good condition with minor wear and tear. <br>
-        3 -- Car in good condition with slight wear and tear, may need repairs and refurbishment. <br>
-        4 -- Car in average condition with wear and tear, DEFINITELY needs repair and refurbishment. <br>
-        5 -- Car with major wear and tear, needs repair and refurbishment. <br>
-        
-        </p>
+      <label for="Ratings" ><b class="eval" onmouseover="mouse()" onmouseout="mouses()">
+
         
         Ratings:</b></label>
 
@@ -271,10 +263,22 @@
       <option value="Onitsha">Onitsha</option>
       <option value="Kano">Kano</option>
     </select>
+    <br>
+    
         
         </div><br>
+        <div class="rating-note">    
+          <p >
+            <b> Note: </b><br>
+            1 -- Car in excellent condition. <br>
+            2 -- Car in very good condition with minor wear and tear. <br>
+            3 -- Car in good condition with slight wear and tear, may need repairs and refurbishment. <br>
+            4 -- Car in average condition with wear and tear, DEFINITELY needs repair and refurbishment. <br>
+            5 -- Car with major wear and tear, needs repair and refurbishment. <br>
             
-    
+            </p>
+          </div>
+        
 
     <div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
@@ -626,6 +630,15 @@
 
   <!-- Template Main JS File -->
   <script src="../static/js/main.js"></script>
+  <script>
+    function mouse(){
+   document.getElementsByClassName('rating-note')[0].style.display = 'block';
+   console.log('ye')}
+   function mouses(){
+   document.getElementsByClassName('rating-note')[0].style.display = 'none';
+   console.log('yes')
+}
+  </script>
 
 </body>
 
