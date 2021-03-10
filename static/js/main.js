@@ -176,9 +176,7 @@
     items: 1
   });
 
-  document.getElementById('predict-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-  });
+  
   //for the email service
   
 
